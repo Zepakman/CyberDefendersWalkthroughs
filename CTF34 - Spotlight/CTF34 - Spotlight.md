@@ -29,7 +29,7 @@ Depuis Autopsy, naviguer dans le fichier `/System/Library/CoreServices/SystemVer
 
 Le fichier n'est pas très compliqué à retrouver, soit en naviguant dans le dossier `root/Users/Shared/`, soit directement en le recherchant dans la liste des images trouvées par Autopsy :
 
-![[Question_2_1.png]]
+![[CTF34 - Spotlight/Pictures/Question_2_1.png]]
 
 Là où la question est assez fourbe est dans le fait que rien ne saute aux yeux sur l'image. J'avoue avoir essayé quelques combinaisons à tout hasard (free phone, fast phone....) mais ça ne fonctionnait pas. 
 C'est là où l'explorateur Autopsy va être intéressant. En effet, je peux rapidement accéder à la retranscription textuelle de l'image et trouver le flag tout en bas :

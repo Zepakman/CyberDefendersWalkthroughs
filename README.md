@@ -8,7 +8,7 @@ Those reports were done using [Obsidian](https://obsidian.md/) markdown tool. On
 
 I hope you will find useful help here ! 
 
-# Francais 
+# Français 
 
 Ce dépôt vise à présenter mes guides pas à pas pour les défis réalisés sur la plateforme de CTF Blue Team [CyberDefenders](https://cyberdefenders.org/).
 

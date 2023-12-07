@@ -5,17 +5,16 @@ Ce challenge propose de réaliser l'analyse forensic d'une image disque sur le p
 
 Conformément aux consignes, ce guide ne contiendra pas les valeurs des flags mais donnent toutes les clefs pour aller les trouver. 
 
-A noter : les questions 1 à 15 ont été réalisée sans Autopsy mais auraint très bien pu être réalisées grâce à cette suite performante.
-
-## Outils utilisés 
+A noter : les questions 1 à 15 ont été réalisée sans Autopsy mais auraient très bien pu être réalisées grâce à cette suite performante.
+### Outils utilisés 
 
 - [FTK Imager](https://www.exterro.com/ftk-imager)
 - [RegRipper3.0](https://github.com/keydet89/RegRipper3.0)
 - [PECmd](https://ericzimmerman.github.io/#!index.md)
 - [DB Browser for SQLite](https://sqlitebrowser.org/dl/)
 - [JumpList Explorer](https://ericzimmerman.github.io/#!index.md)
-
-## Prise de contexte
+- [Autopsy](https://www.autopsy.com/download/)
+### Prise de contexte
 
 Avant de démarrer l'analyse, il est intéressant de récolter du contexte autour de la capture.
 Grâce au fichier `Hunter.ad1.txt` nous avons les informations suivantes :

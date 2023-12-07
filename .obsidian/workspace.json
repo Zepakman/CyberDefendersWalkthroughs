@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "64adfcf2012c05f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CTF34 - Spotlight/CTF34 - Spotlight.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF32 - Hunter/CTF32 - Hunter.md",
+                "file": "CTF34 - Spotlight/CTF34 - Spotlight.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF32 - Hunter/CTF32 - Hunter.md",
+                "file": "CTF34 - Spotlight/CTF34 - Spotlight.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF32 - Hunter/CTF32 - Hunter.md"
+                "file": "CTF34 - Spotlight/CTF34 - Spotlight.md"
               }
             }
           }
@@ -146,21 +159,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3ad07ab353c48e9a",
+  "active": "64adfcf2012c05f2",
   "lastOpenFiles": [
+    "CTF32 - Hunter/CTF32 - Hunter.md",
+    "CTF34 - Spotlight/CTF34 - Spotlight.md",
+    "CTF34 - Spotlight/Pictures/Question_11.png",
+    "CTF34 - Spotlight/Pictures/Question_9_2.png",
+    "CTF34 - Spotlight/Pictures/Question_9_1.png",
+    "CTF34 - Spotlight/Pictures/Question_8_2.png",
+    "CTF34 - Spotlight/Pictures/Question_8_1.png",
+    "Pasted image 20231207102528.png",
+    "CTF34 - Spotlight/Pictures/Question_2_2.png",
+    "CTF34 - Spotlight/Pictures/Question_2_1.png",
+    "CTF34 - Spotlight/Pictures",
+    "CTF34 - Spotlight",
     "git",
     "CTF32 - Hunter",
     "CTF32 - Hunter/Pictures/Question_28_2.png",
-    "CTF32 - Hunter/CTF32 - Hunter.md",
     "CTF32 - Hunter/Pictures/Question_28_1.png",
-    "CTF32 - Hunter/Pictures/Question_27.png",
-    "Pictures/Pasted image 20231204170108.png",
-    "CTF32 - Hunter/Pictures/Question_17_1.png",
-    "CTF32 - Hunter/Pictures/Question_17_2.png",
-    "CTF32 - Hunter/Pictures/Question_17_3.png",
-    "CTF32 - Hunter/Pictures/Question_17.png",
-    "CTF32 - Hunter/Pictures/Question_12.png",
-    "CTF32 - Hunter/Pictures/Question_25.png",
     "Pasted image 20231204162320.png.md",
     "CTF32 - Hunter/Pictures"
   ]

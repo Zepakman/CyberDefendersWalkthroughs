@@ -4,6 +4,7 @@ Lien du challenge : https://cyberdefenders.org/blueteam-ctf-challenges/34#nav-qu
 Ce challenge propose de réaliser l'analyse forensic d'une image disque MacOS.
 
 Conformément aux consignes, ce guide ne contiendra pas les valeurs des flags mais donnent toutes les clefs pour aller les trouver. 
+
 ### Outils utilisés 
 
 - [FTK Imager](https://www.exterro.com/ftk-imager)
@@ -11,10 +12,12 @@ Conformément aux consignes, ce guide ne contiendra pas les valeurs des flags ma
 - [DB Browser for SQLite](https://sqlitebrowser.org/)
 - [mac_apt](https://github.com/ydkhatri/mac_apt)
 - [steghide](http://steghide.sourceforge.net/)
+
 ### Sources utiles 
 
 - https://davidkoepi.wordpress.com/2013/07/06/macforensics4/
 - https://www.swiftforensics.com/2018/02/reading-notes-database-on-macos.html
+
 ### Configuration du challenge
 
 Le challenge met à disposition un fichier AT1 qui est le format propriétaire de FTK Imager pour les captures. Ce format n'est nativement pas analysable par Autopsy. Il est cependant possible de réaliser une analyse en suivant ces étapes :
@@ -43,6 +46,7 @@ Le flag se trouve également dans le fichier `secret` du même répertoire.
 Là encore, deux manières :
 1. Se faire mâcher le travail par Autopsy qui extrait automatiquement les favoris dans les "Data Artifacts"
 2. Aller jeter un coup d'oeil dans `/root/Users/hansel.apricot/Library/Safari/Bookmarks.plist` et compter le nombre de `WebBookmarkUUID` car il est toujours important de savoir d'où les logiciel d'automatisation tirent leurs informations.
+
 ## Question 4 : What's the content of the note titled "Passwords"? 
 
 Même s'il est très facile de deviner le flag avec l'indice donné dans la case de réponse. C'est intéressant d'aller chercher la note par nous même.
@@ -56,19 +60,23 @@ Pour obtenir le contenus de la note :
 2. Identifier dans la table `ZICCLOUDSYNCINGOBJECT` le `Z_NOTEDATA` de la note ayant pour `ZTITLE1` "Passwords". Ici c'est 4.
 3. Dans la table `ZICNOTEDATA`, extraire le champs `ZDATA` de la ligne `Z_PK` 4 en format BIN.
 4. Décompresser le fichier BIN ainsi obtenus pour avoir la note et le flag.
+
 ## Question 5 : Provide the MAC address of the ethernet adapter for this machine.
 
 Cette fois ci, je me serais aidé de [cet article](https://davidkoepi.wordpress.com/2013/07/06/macforensics4/) là.
 Le fichier `/root/private/var/log/daily.out` contient les éléments relatifs au statut des interfaces réseau. 
+
 ## Question 6 : Name the data URL of the quarantined item.
 
 La base de donnée de la quarantaine sur MacOS se trouve dans le sous répertoire utilisateur `/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2 `. Cette fois ci, la quarantaine ne se trouvait pas dans le dossier utilisateur de `hansel.apricot` mais de l'utilisateur `sneaky` qui, à la vue de son user name, ne semble pas effectuer que des activités de bureautique... 
 Le fichier de quarantaine ne comprend qu'une entrée qui est le flag que nous recherchons ici.
 
 **Pro-hint** : Si comme moi, vous n'arrivez pas à trouver ce qui est devant vos yeux, vous pouvez lancer avec Autopsy un rapport qui va extraire dans un fichier texte plat l'ensemble noms de fichier et leur arborescence. Un petit Ctrl+F et le tour est joué !
+
 ## Question 7 : What app did the user "sneaky" try to install via a .dmg file? (one word)
 
 Autant utiliser le rapport extrait précédemment pour trouver le fichier.  Ctrl+F sur ".dmg" nous permet de trouver immédiatement la réponse. 
+
 ## Question 8 : What was the file 'Examplesteg.jpg' renamed to? 
 
 Autant il est très facile de deviner la réponse via l'indice donné, autant, trouver la réponse de manière légitime s'est avéré pour moi plus compliqué que prévu.
@@ -107,6 +115,7 @@ mac_apt nous extrait une belle base de donnée, cette fois-ci parfaitement navig
 
 Encore une fois, je ressort le [précieux article](https://davidkoepi.wordpress.com/2013/07/06/macforensics4/) de David Koepi qui indique que l'indice du mot de passe se trouve dans ce répertoire : `/private/var/db/dslocal/nodes/[user].plist`. Dans notre cas, le fichier se trouve ailleurs : `private/var/db/dslocal/nodes/Default/users/hansel.apricot.plist`  mais l'article nous met bien sur la voie. 
 Le champ `hint` du fichier contient le flag.
+
 ## Question 11 : The main file that stores Hansel's iMessages had a few permissions changes. How many times did the permissions change?
 
 Les chats IMessage sont stockés dans la base ``chat.db`` pour chaque utilisateur. Cette base est localisée dans le répertoire ``/root/Users/[UserName]/Library/Messages/chat.db``.
@@ -123,6 +132,7 @@ Il suffit de compter le nombre d'EventFlags "PermissionChange" pour trouver la s
 J'avoue y être allé un peu au culot pour celle là. 
 Comme vu question 10, chaque utilisateur (humain ou machine) a un fichier PLIST dans le répertoire `private/var/db/dslocal/nodes/Default/users/.
 En regardant un peu ce qui pouvait marcher (et après quelques échecs), je suis finalement tombé sur l'utilisateur en question (indice : il y a usb dans son nom). Une fois trouvé, il suffit d'entrer la valeur de la clef "UID" pour valider la question
+
 ## Question 13 : Find the flag in the GoodExample.jpg image. It's hidden with better tools.
 
 Le challenge nous prend par la main pour cette question. Le fichier se trouve dans le dossier `root/Users/Shared/`. Dans l'onglet Details du challenge, il y a un lien vers l'outil [steghide](http://steghide.sourceforge.net/). A partir de là, il suffit de dérouler le readme.txt de l'outil :
@@ -137,6 +147,7 @@ Quid du mot de passe ? J'ai tenté plusieurs choses :
 - Le contenu du fichier `secret` identifié question 2 
 - le contenu de la note "Passwords" identifié question 4. 
 Il s'avère qu'Hansel n'est finalement pas très malin car il ne s'est même pas donné la peine de donner un mot de passe lors de l'encodage des données. Il faut donc laisser la passphrase vide. 
+
 ## Question 14 : What was exactly typed in the Spotlight search bar on 4/20/2020 02:09:48
 
 Retour dans mon fichier texte pour chercher ce que je trouve autour de Spotlight. J'identifie le dossier `/root/Users/sneaky/Library/Application Support/com.apple.spotlight/`. En regardant un peu les différents fichiers, j'identifie `com.apple.spotlight.Shortcuts` qui contient la réponse.

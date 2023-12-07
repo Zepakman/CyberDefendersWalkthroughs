@@ -37,14 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF50 - PacketMaze/CTF50 - PacketMaze.md",
+                "file": "CTF68 - PacketMaze/CTF68 - PacketMaze.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cf1369a7cfc3f267",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CTF68 - PacketMaze/CTF68 - PacketMaze.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF50 - PacketMaze/CTF50 - PacketMaze.md",
+                "file": "CTF68 - PacketMaze/CTF68 - PacketMaze.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF50 - PacketMaze/CTF50 - PacketMaze.md",
+                "file": "CTF68 - PacketMaze/CTF68 - PacketMaze.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF50 - PacketMaze/CTF50 - PacketMaze.md"
+                "file": "CTF68 - PacketMaze/CTF68 - PacketMaze.md"
               }
             }
           }
@@ -171,22 +183,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ef1b3e5c21498246",
+  "active": "cf1369a7cfc3f267",
   "lastOpenFiles": [
-    "Question_10.md",
-    "CTF50 - PacketMaze/CTF50 - PacketMaze.md",
-    "CTF50 - PacketMaze/Pictures/Question_10.png",
-    "CTF50 - PacketMaze/Pictures/Question_5.png",
-    "CTF50 - PacketMaze/Pictures/Question_2_1.png",
-    "CTF50 - PacketMaze/Pictures/Introduction_4.png",
-    "CTF50 - PacketMaze/Pictures/Introduction_3.png",
-    "CTF50 - PacketMaze/Pictures/Introduction_2.png",
-    "CTF50 - PacketMaze/Pictures/Question_1.png",
-    "CTF50 - PacketMaze/Pictures/Introduction_1.png",
+    "CTF44 - NukeTheBrowser/CTF44 - NukeTheBrowser.md",
     "CTF34 - Spotlight/CTF34 - Spotlight.md",
+    "CTF68 - PacketMaze/CTF68 - PacketMaze.md",
+    "CTF44 - NukeTheBrowser/Untitled",
+    "README.md",
+    "CTF44 - NukeTheBrowser",
+    "Question_10.md",
+    "CTF68 - PacketMaze/Pictures/Question_10.png",
+    "CTF68 - PacketMaze/Pictures/Question_5.png",
+    "CTF68 - PacketMaze/Pictures/Question_2_1.png",
+    "CTF68 - PacketMaze/Pictures/Introduction_4.png",
+    "CTF68 - PacketMaze/Pictures/Introduction_3.png",
+    "CTF68 - PacketMaze/Pictures/Introduction_2.png",
+    "CTF68 - PacketMaze/Pictures/Question_1.png",
+    "CTF68 - PacketMaze/Pictures/Introduction_1.png",
     "CTF32 - Hunter/CTF32 - Hunter.md",
-    "CTF50 - PacketMaze/Pictures",
-    "CTF50 - PacketMaze",
+    "CTF68 - PacketMaze/Pictures",
+    "CTF68 - PacketMaze",
     "CTF34 - Spotlight/Pictures/Question_11.png",
     "CTF34 - Spotlight/Pictures/Question_9_2.png",
     "CTF34 - Spotlight/Pictures",

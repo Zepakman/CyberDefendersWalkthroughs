@@ -55,7 +55,7 @@ Grâce à NetworkMiner nous allons pouvoir facilement répondre à ce challenge 
 ## Question 2 : What is the IPv6 address of the DNS server used by 192.168.1.26? (####::####:####:####:####)
 
 Toujours sur NetworkMiner, nous pouvons identifier les session DNS dans l'onglet DNS :
-![[CTF50 - PacketMaze/Pictures/Question_2_1.png]]
+![[CTF68 - PacketMaze/Pictures/Question_2_1.png]]
 
 En cherchant l'IP 192.168.1.10 dans l'onglet "Hosts" et en étendant l'onglet "MAC: CA0BADAD20BA", on identifie l'IPv6 recherchée.
 Il s'agit également de la seule IPv6 recevant des requêtes DNS donc logiquement c'est celle-ci.

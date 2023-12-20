@@ -109,7 +109,7 @@ Toujours dans le fichier `C:\Users\Hunter\Desktop\nmapscan.xml`, cette fois ci a
 
 ## Question 12 : What ports were found "open"?(comma-separated, ascending)
 
-Toujours dans le fichier `C:\Users\Hunter\Desktop\nmapscan.xml`, La liste des ports ouverts est indiquée dans le resultat du scan :![[Question_12.png]]
+Toujours dans le fichier `C:\Users\Hunter\Desktop\nmapscan.xml`, La liste des ports ouverts est indiquée dans le resultat du scan :![[CTF32 - Hunter/Pictures/Question_12.png]]
 
 Il suffit de lister ceux "open" pour valider le flag.
 

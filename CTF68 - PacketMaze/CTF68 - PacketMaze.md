@@ -1,6 +1,6 @@
 ## Introduction 
 
-Lien du challenge : https://cyberdefenders.org/blueteam-ctf-challenges/68#nav-questions
+Lien du challenge : https://cyberdefenders.org/blueteam-ctf-challenges/44#nav-questions
 Ce challenge nous met dans la peau d'un analyste SOC qui doit analyser une capture réseau pour identifier un potentiel insider.
 
 Conformément aux consignes, ce guide ne contiendra pas les valeurs des flags mais donnent toutes les clefs pour aller les trouver. 
@@ -51,7 +51,7 @@ NetworkMiner va pouvoir nous extraire de nombreux artefacts pour la suite du cha
 ## Question 1 :  What is the FTP password?
 
 Grâce à NetworkMiner nous allons pouvoir facilement répondre à ce challenge en allant dans l'onglet "Credentials" : 
-![[Question_1.png]]
+![[CTF68 - PacketMaze/Pictures/Question_1.png]]
 ## Question 2 : What is the IPv6 address of the DNS server used by 192.168.1.26? (####::####:####:####:####)
 
 Toujours sur NetworkMiner, nous pouvons identifier les session DNS dans l'onglet DNS :
@@ -73,7 +73,7 @@ Le nombre de paquets est affichés en bas de la fenêtre.
 ## Question 5 : What is the MAC address of the system being investigated in the PCAP?”
 
 L'adresse IP investiguée est la 192.168.1.26. Si l'on en est pas convaincu, il est possible de générer un rapport depuis Wireshark : Statistiques > IPv4 Statistics > All Addresses :
-![[Question_5.png]]
+![[CTF68 - PacketMaze/Pictures/Question_5.png]]
 Dans l'onglet "Hosts" de NetworkMiner, on peut voir l'adresse MAC du poste.
 
 ## Question 6 : What was the camera model name used to take picture 20210429_152157.jpg ?
